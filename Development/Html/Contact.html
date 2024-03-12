@@ -1,0 +1,145 @@
+<!DOCTYPE Html>
+<html>
+<head>
+	<title>
+		Contact
+	</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		body{
+			background-image: url(../images/2068bab3181ff31c9bb60ab196934348.jpg);
+			background-size: cover;
+			background-attachment: fixed;
+		}
+.about{
+	left:80%;
+	height: 50px;
+	width: 80px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+	.about:hover{
+	 background-color: #fff;
+	color:red;
+
+}
+
+	</style>
+
+</head>
+<body>
+	
+	<ul class="nav">
+		<li>
+			<a href="../Index.html">
+
+				<div class="icon">
+					<i class="fa fa-home" aria-hidden="true"></i>
+					<i class="fa fa-home" aria-hidden="true"></i>
+				</div>
+				<div class="name"><span data-text="Home">Home</span></div>
+			</a>
+		</li>
+		<li>
+			<a href="About.html">
+				<div class="icon">
+					<i class="fa fa-motorcycle" aria-hidden="true"></i>
+					<i class="fa fa-motorcycle" aria-hidden="true"></i>
+				</div>
+				<div class="name"><span data-text="Stock">Stock</span></div>
+			</a>
+		</li>
+		<li>
+			<a href="Blog.html">
+				<div class="icon">
+					<i class="fa fa-rss-square" aria-hidden="true"></i>
+					<i class="fa fa-rss-square" aria-hidden="true"></i>
+				</div>
+				<div class="name"><span data-text="Blog">Blog</span></div>
+			</a>
+		</li>
+		
+
+		<li>
+			<a href="Research.html">
+				<div class="icon">
+					<i class="fa fa-newspaper-o" aria-hidden="true"></i>
+					<i class="fa fa-newspaper-o" aria-hidden="true"></i>
+				</div>
+				<div class="name"><span data-text="Research">Research</span></div>
+			</a>
+		</li>
+		
+		<li>
+			<a href="Contact.html">
+				<div class="icon">
+					<i class="fa fa-envelope-square" aria-hidden="true"></i>
+					<i class="fa fa-envelope-square" aria-hidden="true"></i>
+				</div>
+				<div class="name">
+					<a class="current"><span data-text="Contact">Contact</span></a>
+				</div>
+			</a>
+		</li>
+			
+	</ul>
+	
+	<form name="messageForm" onsubmit=" return validateForm()" action="message.html">
+		<p>First name:<input type="text" name="firstname"></p>
+		<p>Last name:<input type="text" name="lastname"></p>
+		<p>Email Address:<input type="Email" name="emailaddress"></p>
+		<p>Field:<input type="radio" name="field" value="Information ">Information 
+		<input type="radio" name="field" value="buy">Buy</p>
+		<p>Message:<br><textarea name="message" rows="8" cols="60" placeholder="Enter your message"></textarea></p>
+		<br><br>
+		<button type="submit">Submit</button>
+		<br>
+		
+	</form>
+	<div >
+
+	<a href="video.html"><button type="submit" class="about">About us</button></a>
+	</div>
+
+	<script type="text/javascript">
+		function validateForm()
+		 {
+			var fname =document.forms["messageForm"]["firstname"].value;
+			var lname =document.forms["messageForm"]["lastname"].value;
+			var email =document.forms["messageForm"]["emailaddress"].value;
+			var field =document.forms["messageForm"]["field"].value;
+			var message =document.forms["messageForm"]["message"].value;
+
+			if(fname =="" || lname==""||email==""||field==""||message=="")
+			 {
+			 	alert("Empty fields found. Please fill the form.");
+			 	return false;
+			 }
+			 else
+			 {
+			 	true;
+			 }
+			
+			
+		}
+		
+		
+	</script>
+
+	
+	
+	
+	<ul class="change">
+		<li><a href="https://accounts.google.com"><i class="fa fa-google-plus-official" aria-hidden="true"></i></a></li>
+		<li><a href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+		<li><a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+		<li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+		<li><a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+</ul>
+<p style="color: #dedede;position: absolute;top: 95%;left: 46%;font-size: 11px;"> Shishir &copy; 2022</p>
+
+
+</body>
+</html>

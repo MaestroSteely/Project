@@ -1,0 +1,163 @@
+<!DOCTYPE Html>
+<html>
+<head>
+	<title>
+		ROYAL ENFIELD
+	</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	
+
+	
+</head>
+<body>
+	
+	<center>
+	<div>
+		
+		<style type="text/css">
+			.images{
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%,-50%);
+				background-size: 100% 100%;
+				box-shadow: 1px 2px 10px 10px white
+
+				height: 100%;
+				width: 100%;
+				margin: 0 auto;
+				
+			}
+		</style>
+	</div>
+	</center>
+	
+	<div>
+		<img src="images/CB background By Abk Creation  66.jpg" class="images">
+		<img src="images/restored-and-repainted-royal-endfield-machismo-500_pj.jpg" class="images">
+		<img src="images/6000000001.jpg" class="images">
+	</div>
+	
+	
+	
+
+
+	<ul class="nav">
+		<li>
+			<a href="Index.html">
+
+				<div class="icon">
+					<i class="fa fa-home" aria-hidden="true"></i>
+					<i class="fa fa-home" aria-hidden="true"></i>
+				</div>
+				<div class="name">
+					<a class="current"><span data-text="Home">Home</span></div></a>
+			</a>
+		</li>
+		<li>
+			<a href="Html/About.html">
+				<div class="icon">
+					<i class="fa fa-motorcycle" aria-hidden="true"></i>
+					<i class="fa fa-motorcycle" aria-hidden="true"></i>
+				</div>
+				<div class="name"><span data-text="Stock">Stock</span></div>
+			</a>
+		</li>
+		<li>
+			<a href="Html/Blog.html">
+				<div class="icon">
+					<i class="fa fa-rss-square" aria-hidden="true"></i>
+					<i class="fa fa-rss-square" aria-hidden="true"></i>
+				</div>
+				<div class="name"><span data-text="Blog">Blog</span></div>
+			</a>
+		</li>
+		
+		<li>
+			<a href="Html/Research.html">
+				<div class="icon">
+					<i class="fa fa-newspaper-o" aria-hidden="true"></i>
+					<i class="fa fa-newspaper-o" aria-hidden="true"></i>
+				</div>
+				<div class="name"><span data-text="Research">Research</span></div>
+			</a>
+		</li>
+		
+			<li>
+			<a href="Html/Contact.html">
+				<div class="icon">
+					<i class="fa fa-envelope-square" aria-hidden="true"></i>
+					<i class="fa fa-envelope-square" aria-hidden="true"></i>
+				</div>
+				<div class="name"><span data-text="Contact">Contact</span></div>
+			</a>
+		</li>
+			
+	</ul>
+	<div class="title">
+		<h1> Hi, everyone and welcome to Royal Enfield Family!</h1>
+	</div>
+	<div class="button">
+		<a href="Html/About.html" class="btn">VIEW ALL STOCKS</a>
+		<a href="Html/Contact.html" class="btn"> CONTACT NOW</a>
+	</div>
+	
+	<script type="text/javascript">
+
+		index = 0;
+
+		show(index);
+
+		function show(n){
+			var imgs = document.getElementsByClassName('images');
+
+			if (n> imgs.length-1) {
+				index= 0;
+			}
+
+			if(n<0){
+				index= imgs.length - 1;
+			} 
+
+			for (var i = 0; i <= imgs.length-1; i++) {
+				imgs[i].style.display="none";
+			}
+
+			imgs[index].style.display="block";
+		}
+
+
+		function automatic(){
+			index++;
+			show(index);
+			setTimeout(automatic, 5000);
+		}
+
+		automatic();
+
+		function change(n){
+			index+= n;
+			show(index);
+		}
+
+		
+	</script>
+
+
+
+
+<ul class="change">
+		<li><a href="https://accounts.google.com"><i class="fa fa-google-plus-official" aria-hidden="true"></i></a></li>
+		<li><a href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+		<li><a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+		<li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+		<li><a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+</ul>
+<p style="color: #dedede;position: absolute;top: 95%;left: 46%;font-size: 11px;"> Shishir &copy; 2022</p>
+
+
+</body>
+</html>
